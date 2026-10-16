@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Agustín Massa — Programador Web | Frontend &amp; Full Stack Developer</title>
+  <meta name="description" content="Programador web y desarrollador frontend y full stack en Barcelona. Creo soluciones web responsivas, accesibles y optimizadas con HTML, CSS, JavaScript, PHP y MySQL.">
+  <meta name="author" content="Agustín Massa">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#05080D">
+
+  <!--
+    ════════════════════════════════════════════════════════════════════════════
+    REEMPLAZAR: URL pública definitiva del portfolio.
+    Los valores "https://example.com/" de este bloque son marcadores de posición.
+
+    • Cuando exista un dominio real, descomenta la etiqueta <link rel="canonical">
+      y sustituye todas las apariciones de https://example.com/ por la URL final.
+      (El canonical se deja desactivado a propósito: si se publica apuntando a un
+      dominio ajeno, los buscadores indexarían la página equivocada.)
+
+    • La imagen de Open Graph usa la foto de perfil. Se recomienda, cuando exista
+      una URL pública, sustituirla por una imagen de 1200×630 px.
+    ════════════════════════════════════════════════════════════════════════════
+
+  <link rel="canonical" href="https://example.com/">
+  -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="Agustín Massa">
+  <meta property="og:title" content="Agustín Massa — Programador Web | Frontend &amp; Full Stack Developer">
+  <meta property="og:description" content="Programador web y desarrollador frontend y full stack en Barcelona. Soluciones web responsivas, accesibles y optimizadas.">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:image" content="https://example.com/assets/img/profile/foto_color.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Agustín Massa — Programador Web | Frontend &amp; Full Stack Developer">
+  <meta name="twitter:description" content="Programador web y desarrollador frontend y full stack en Barcelona. Soluciones web responsivas, accesibles y optimizadas.">
+
+  <!-- Favicon en línea (sin peticiones adicionales ni archivos extra) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2306008C'/%3E%3Ctext x='16' y='22' font-family='system-ui,sans-serif' font-size='15' font-weight='700' fill='%23F2F2F2' text-anchor='middle'%3EAM%3C/text%3E%3C/svg%3E">
+
+  <!-- Bootstrap 5.3.8 (última estable verificada) — CDN oficial jsDelivr con SRI -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Datos estructurados: solo información verificable del CV y perfiles reales -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Agustín Massa",
+    "jobTitle": "Programador Web | Frontend & Full Stack Developer",
+    "description": "Desarrollador web frontend y full stack con experiencia en el desarrollo de soluciones eficientes, responsivas y accesibles.",
+    "email": "mailto:agus.massa96@gmail.com",
+    "knowsLanguage": ["es", "en", "fr"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Barcelona",
+      "addressCountry": "ES"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/agustin-massa/",
+      "https://github.com/AgustinCMM"
+    ],
+    "knowsAbout": [
+      "Desarrollo web",
+      "Desarrollo frontend",
+      "Desarrollo full stack",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "PHP",
+      "MySQL",
+      "Git",
+      "Accesibilidad web",
+      "Posicionamiento SEO",
+      "Diseño responsive",
+      "Experiencia de usuario",
+      "Figma"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="visually-hidden-focusable am-skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <!-- ═══════════════ A. NAVEGACIÓN ═══════════════ -->
+  <header class="am-header sticky-top">
+    <nav class="navbar navbar-expand-lg" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand am-brand" href="#inicio">
+          <svg class="am-brand__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+            <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+          </svg>
+          <span>Agustín&nbsp;Massa</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Mostrar u ocultar el menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item"><a class="nav-link am-nav-link" href="#perfil">Perfil</a></li>
+            <li class="nav-item"><a class="nav-link am-nav-link" href="#habilidades">Habilidades</a></li>
+            <li class="nav-item"><a class="nav-link am-nav-link" href="#experiencia">Experiencia</a></li>
+            <li class="nav-item"><a class="nav-link am-nav-link" href="#proyectos">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link am-nav-link" href="#formacion">Formación</a></li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <a class="btn btn-accent btn-sm w-100" href="#contacto">Contactar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ═══════════════ B. HERO ═══════════════ -->
+    <section class="am-hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <p class="am-eyebrow">Hola, soy</p>
+            <h1 class="am-hero__name" id="hero-titulo">Agustín Massa</h1>
+            <p class="am-hero__role">Programador Web · Frontend &amp; Full Stack Developer</p>
+            <p class="am-hero__lead">
+              Desarrollo soluciones web eficientes, responsivas y adaptables a cualquier
+              dispositivo, con foco en el rendimiento, la accesibilidad y la experiencia
+              de usuario.
+            </p>
+
+            <p class="am-hero__location">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+              </svg>
+              <span>Barcelona, España</span>
+            </p>
+
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a class="btn btn-accent btn-lg" href="#experiencia">
+                Ver experiencia
+                <svg class="am-btn__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+              </a>
+              <a class="btn btn-outline-accent btn-lg" href="#contacto">Contactar</a>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="am-hero__photo">
+              <img src="assets/img/profile/foto_color.png"
+                   alt="Agustín Massa, programador web, de perfil frente a la fachada de un edificio de ladrillo"
+                   width="415" height="408"
+                   fetchpriority="high" decoding="async">
+            </div>
+          </div>
+        </div>
+
+        <!-- Datos verificables del CV (no son métricas inventadas) -->
+        <ul class="am-facts">
+          <li class="am-facts__item">
+            <span class="am-facts__label">Experiencia</span>
+            <span class="am-facts__value">Desarrollador web freelance desde 2019</span>
+          </li>
+          <li class="am-facts__item">
+            <span class="am-facts__label">Ubicación</span>
+            <span class="am-facts__value">Barcelona, España</span>
+          </li>
+          <li class="am-facts__item">
+            <span class="am-facts__label">Idiomas</span>
+            <span class="am-facts__value">Español (nativo) · Inglés (B1) · Francés (A1)</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ═══════════════ C. SOBRE MÍ ═══════════════ -->
+    <section class="am-section" id="perfil" aria-labelledby="perfil-titulo">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <p class="am-eyebrow">Sobre mí</p>
+            <h2 class="am-section__title" id="perfil-titulo">Perfil profesional</h2>
+            <p class="am-section__intro">
+              Combino el desarrollo web con una formación en Artes Multimediales, lo que
+              aporta una mirada creativa a un enfoque técnico centrado en la calidad.
+            </p>
+          </div>
+
+          <div class="col-lg-7">
+            <!-- Texto tomado literalmente del CV (se ha omitido la referencia a la nacionalidad) -->
+            <p class="am-prose">
+              Desarrollador Web Frontend y Full Stack, con iniciativa y enfoque en la creación
+              de soluciones eficientes, responsivas y adaptables a múltiples dispositivos.
+              Comprometido con las mejores prácticas de desarrollo, optimización del rendimiento
+              y experiencia del usuario. Busco seguir profundizando en el desarrollo web,
+              perfeccionando mis habilidades en programación y creando aplicaciones funcionales
+              y dinámicas. Además, mi formación en Artes Multimediales me ha aportado una visión
+              creativa que complementa mi enfoque técnico.
+            </p>
+
+            <h3 class="am-subtitle">Enfoque de trabajo</h3>
+            <ul class="am-checklist">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </svg>
+                <span><strong>Rendimiento y tiempos de carga:</strong> optimización de recursos para lograr respuestas más rápidas y mejorar la retención de usuarios.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </svg>
+                <span><strong>Accesibilidad web:</strong> aplicación de buenas prácticas para que los sitios sean funcionales y utilizables por todo el mundo.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </svg>
+                <span><strong>Posicionamiento SEO técnico:</strong> desarrollo de secciones y contenidos orientados a mejorar la visibilidad del sitio.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </svg>
+                <span><strong>Diseño responsive y UX/UI:</strong> interfaces intuitivas, adaptadas a distintos dispositivos y pensadas para el usuario.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </svg>
+                <span><strong>Trabajo con equipos de diseño y marketing:</strong> colaboración para garantizar la coherencia visual y funcional de cada proyecto.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ D. HABILIDADES ═══════════════ -->
+    <section class="am-section am-section--alt" id="habilidades" aria-labelledby="habilidades-titulo">
+      <div class="container">
+        <div class="am-section__head">
+          <p class="am-eyebrow">Habilidades</p>
+          <h2 class="am-section__title" id="habilidades-titulo">Tecnologías y competencias</h2>
+          <p class="am-section__intro">
+            Agrupadas tal y como las organiza mi CV. Los distintos niveles se indican con
+            etiquetas, no con porcentajes.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="am-card h-100">
+              <div class="am-card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                  <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+                </svg>
+              </div>
+              <h3 class="am-card__title">Lenguajes y tecnologías</h3>
+              <p class="am-card__text">Tecnologías con las que desarrollo y mantengo sitios y aplicaciones web.</p>
+              <ul class="am-tags" aria-label="Lenguajes y tecnologías">
+                <li class="am-tag">HTML</li>
+                <li class="am-tag">CSS</li>
+                <li class="am-tag">JavaScript</li>
+                <li class="am-tag">Bootstrap</li>
+                <li class="am-tag">PHP</li>
+                <li class="am-tag">MySQL</li>
+                <li class="am-tag">Git</li>
+                <li class="am-tag">GitHub</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="am-card h-100">
+              <div class="am-card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                  <path d="M0 .5A.5.5 0 0 1 .5 0h5a.5.5 0 0 1 .5.5v5.277l4.147-4.131a.5.5 0 0 1 .707 0l3.535 3.536a.5.5 0 0 1 0 .708L10.261 10H15.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-.5.5H3a3 3 0 0 1-2.121-.879A3 3 0 0 1 0 13.044m6-.21 7.328-7.3-2.829-2.828L6 7.188zM4.5 13a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0M15 15v-4H9.258l-4.015 4zM0 .5v12.495zm0 12.495V13z"/>
+                </svg>
+              </div>
+              <h3 class="am-card__title">Diseño y UX/UI</h3>
+              <p class="am-card__text">Herramientas de diseño, prototipado y edición con las que trabajo el aspecto visual.</p>
+              <ul class="am-tags" aria-label="Diseño y UX/UI">
+                <li class="am-tag">Figma</li>
+                <li class="am-tag">Photoshop</li>
+                <li class="am-tag">Illustrator</li>
+                <li class="am-tag">Premiere Pro</li>
+                <li class="am-tag">After Effects</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="am-card h-100">
+              <div class="am-card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                  <path d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"/>
+                  <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"/>
+                </svg>
+              </div>
+              <h3 class="am-card__title">Conocimientos iniciales</h3>
+              <p class="am-card__text">Tecnologías en fase de aprendizaje, tal y como las declara mi CV.</p>
+              <ul class="am-tags" aria-label="Conocimientos iniciales">
+                <li class="am-tag am-tag--muted">Python <span class="am-tag__note">nivel inicial</span></li>
+                <li class="am-tag am-tag--muted">Vue.js <span class="am-tag__note">nivel inicial</span></li>
+                <li class="am-tag am-tag--muted">jQuery <span class="am-tag__note">nivel inicial</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="am-card h-100">
+              <div class="am-card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                  <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434zM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21zM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z"/>
+                </svg>
+              </div>
+              <h3 class="am-card__title">Otras competencias</h3>
+              <p class="am-card__text">Perfil multidisciplinar procedente de mi formación en Artes Multimediales.</p>
+              <ul class="am-tags" aria-label="Otras competencias">
+                <li class="am-tag">Instalaciones interactivas</li>
+                <li class="am-tag">Realidad virtual (VR)</li>
+                <li class="am-tag">Aplicaciones y videojuegos</li>
+                <li class="am-tag">Processing</li>
+                <li class="am-tag">Arduino</li>
+                <li class="am-tag">Pure Data</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ E. EXPERIENCIA ═══════════════ -->
+    <section class="am-section" id="experiencia" aria-labelledby="experiencia-titulo">
+      <div class="container">
+        <div class="am-section__head">
+          <p class="am-eyebrow">Trayectoria</p>
+          <h2 class="am-section__title" id="experiencia-titulo">Experiencia profesional</h2>
+        </div>
+
+        <ol class="am-timeline">
+          <li class="am-timeline__item">
+            <div class="am-timeline__marker" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5"/>
+                <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85z"/>
+              </svg>
+            </div>
+            <div class="am-timeline__content">
+              <div class="am-timeline__header">
+                <h3 class="am-timeline__role">Programador Web</h3>
+                <p class="am-timeline__meta"><span class="am-timeline__company">Baek &amp; Co</span> · <span>2022 – 2024</span></p>
+              </div>
+              <ul class="am-prose-list">
+                <li>Mantenimiento y optimización del sitio web corporativo, mejorando su rendimiento, accesibilidad y adaptabilidad a distintos dispositivos.</li>
+                <li>Desarrollo de nuevas secciones y funcionalidades enfocadas en mejorar la usabilidad, la experiencia del usuario y el posicionamiento SEO.</li>
+                <li>Implementación de plataformas internas con bases de datos y autogestión, optimizando la eficiencia del equipo de marketing y ventas y reduciendo tiempos de gestión.</li>
+                <li>Colaboración con diseñadores y equipos de marketing para garantizar la coherencia visual y funcional del sitio, aplicando principios de accesibilidad web y mejores prácticas en optimización de contenido.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="am-timeline__item">
+            <div class="am-timeline__marker" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5"/>
+                <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85z"/>
+              </svg>
+            </div>
+            <div class="am-timeline__content">
+              <div class="am-timeline__header">
+                <h3 class="am-timeline__role">Desarrollador Web</h3>
+                <p class="am-timeline__meta"><span class="am-timeline__company">Made Studio</span> · <span>2019 – Actualidad | Freelance</span></p>
+              </div>
+              <ul class="am-prose-list">
+                <li>Desarrollo de sitios web personalizados, asegurando interfaces intuitivas, optimizadas para distintos dispositivos y alineadas con las necesidades del cliente.</li>
+                <li>Optimización del rendimiento, mejora en los tiempos de carga y respuestas más eficientes, incrementando la retención de usuarios.</li>
+                <li>Trabajo en conjunto con el equipo de diseño para implementar soluciones que mejoren la usabilidad y la experiencia del usuario.</li>
+                <li>Aplicación de buenas prácticas en accesibilidad y SEO para garantizar sitios funcionales, eficientes y bien posicionados.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ═══════════════ F. PROYECTOS ═══════════════ -->
+    <section class="am-section am-section--alt" id="proyectos" aria-labelledby="proyectos-titulo">
+      <div class="container">
+        <div class="am-section__head">
+          <p class="am-eyebrow">Proyectos</p>
+          <h2 class="am-section__title" id="proyectos-titulo">Trabajos seleccionados</h2>
+          <p class="am-section__intro">
+            Una muestra del tipo de proyectos que desarrollo. Puedes ver el código y los
+            repositorios completos en mi perfil de GitHub.
+          </p>
+        </div>
+
+        <!-- ══════════════════════════════════════════════════════════════════════
+             REEMPLAZAR: las tres tarjetas siguientes son ESTRUCTURA DE EJEMPLO.
+             Contienen texto genérico y deben sustituirse por proyectos reales:
+
+               • nombre y categoría del proyecto
+               • descripción (problema, contexto, tu rol y resultados reales)
+               • etiquetas de tecnologías realmente utilizadas
+               • enlaces verificados a repositorio y/o demo (plantilla comentada abajo)
+
+             No dejes texto genérico en la versión publicada: no representa
+             proyectos reales y perjudica la credibilidad del portfolio.
+             ══════════════════════════════════════════════════════════════════════ -->
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <article class="am-card am-card--project h-100">
+              <p class="am-card__kicker">Desarrollo web</p>
+              <h3 class="am-card__title">Proyecto 1</h3>
+              <p class="am-card__text">
+                Espacio reservado para la descripción del proyecto: objetivo, contexto,
+                tu rol en el equipo y los resultados obtenidos.
+              </p>
+              <ul class="am-tags" aria-label="Tecnologías del proyecto 1">
+                <li class="am-tag">HTML</li>
+                <li class="am-tag">CSS</li>
+                <li class="am-tag">JavaScript</li>
+              </ul>
+              <!-- REEMPLAZAR cuando exista un repositorio o demo verificable:
+              <a class="am-card__link" href="URL_DEL_REPOSITORIO">
+                Ver repositorio
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                </svg>
+              </a>
+              -->
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <article class="am-card am-card--project h-100">
+              <p class="am-card__kicker">Aplicación web</p>
+              <h3 class="am-card__title">Proyecto 2</h3>
+              <p class="am-card__text">
+                Espacio reservado para la descripción del proyecto: objetivo, contexto,
+                tu rol en el equipo y los resultados obtenidos.
+              </p>
+              <ul class="am-tags" aria-label="Tecnologías del proyecto 2">
+                <li class="am-tag">PHP</li>
+                <li class="am-tag">MySQL</li>
+                <li class="am-tag">Bootstrap</li>
+              </ul>
+              <!-- REEMPLAZAR cuando exista un repositorio o demo verificable: ver plantilla de la tarjeta anterior. -->
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <article class="am-card am-card--project h-100">
+              <p class="am-card__kicker">Interfaz de usuario</p>
+              <h3 class="am-card__title">Proyecto 3</h3>
+              <p class="am-card__text">
+                Espacio reservado para la descripción del proyecto: objetivo, contexto,
+                tu rol en el equipo y los resultados obtenidos.
+              </p>
+              <ul class="am-tags" aria-label="Tecnologías del proyecto 3">
+                <li class="am-tag">JavaScript</li>
+                <li class="am-tag">CSS</li>
+                <li class="am-tag">Figma</li>
+              </ul>
+              <!-- REEMPLAZAR cuando exista un repositorio o demo verificable: ver plantilla de la tarjeta anterior. -->
+            </article>
+          </div>
+        </div>
+
+        <p class="am-section__footnote">
+          <a class="am-link" href="https://github.com/AgustinCMM" target="_blank" rel="noopener noreferrer">
+            Ver repositorios en GitHub
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+            </svg>
+            <span class="visually-hidden">(se abre en una pestaña nueva)</span>
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══════════════ G. FORMACIÓN ═══════════════ -->
+    <section class="am-section" id="formacion" aria-labelledby="formacion-titulo">
+      <div class="container">
+        <div class="am-section__head">
+          <p class="am-eyebrow">Formación</p>
+          <h2 class="am-section__title" id="formacion-titulo">Estudios y certificaciones</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <article class="am-card h-100">
+              <p class="am-card__kicker">2022</p>
+              <h3 class="am-card__title am-card__title--sm">Desarrollo Web Full Stack Python</h3>
+              <p class="am-card__text">Codo a Codo 4.0</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="am-card h-100">
+              <p class="am-card__kicker">2021</p>
+              <h3 class="am-card__title am-card__title--sm">Desarrollo Web Full Stack PHP</h3>
+              <p class="am-card__text">Codo a Codo 4.0</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="am-card h-100">
+              <p class="am-card__kicker">2021</p>
+              <h3 class="am-card__title am-card__title--sm">Habilidades Blandas en Tecnología</h3>
+              <p class="am-card__text">Accenture · Codo a Codo 4.0</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="am-card h-100">
+              <p class="am-card__kicker">2014 – 2019</p>
+              <h3 class="am-card__title am-card__title--sm">Licenciatura en Artes Multimediales</h3>
+              <p class="am-card__text">Universidad Nacional de las Artes</p>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <article class="am-card h-100">
+              <div class="am-card__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                  <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+                  <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+                </svg>
+              </div>
+              <h3 class="am-card__title">Idiomas</h3>
+              <ul class="am-tags" aria-label="Idiomas">
+                <li class="am-tag">Español <span class="am-tag__note">nativo</span></li>
+                <li class="am-tag">Inglés <span class="am-tag__note">B1</span></li>
+                <li class="am-tag">Francés <span class="am-tag__note">A1</span></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ H. CONTACTO ═══════════════ -->
+    <section class="am-section am-section--alt" id="contacto" aria-labelledby="contacto-titulo">
+      <div class="container">
+        <div class="am-section__head">
+          <p class="am-eyebrow">Contacto</p>
+          <h2 class="am-section__title" id="contacto-titulo">Hablemos</h2>
+          <p class="am-section__intro">
+            Estoy disponible para oportunidades laborales, colaboraciones y proyectos
+            de desarrollo web.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <a class="am-contact" href="mailto:agus.massa96@gmail.com">
+              <span class="am-contact__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                </svg>
+              </span>
+              <span class="am-contact__label">Correo electrónico</span>
+              <span class="am-contact__value">agus.massa96@gmail.com</span>
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a class="am-contact" href="https://www.linkedin.com/in/agustin-massa/" target="_blank" rel="noopener noreferrer">
+              <span class="am-contact__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                </svg>
+              </span>
+              <span class="am-contact__label">LinkedIn</span>
+              <span class="am-contact__value">linkedin.com/in/agustin-massa</span>
+              <span class="visually-hidden">(se abre en una pestaña nueva)</span>
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a class="am-contact" href="https://github.com/AgustinCMM" target="_blank" rel="noopener noreferrer">
+              <span class="am-contact__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                </svg>
+              </span>
+              <span class="am-contact__label">GitHub</span>
+              <span class="am-contact__value">github.com/AgustinCMM</span>
+              <span class="visually-hidden">(se abre en una pestaña nueva)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ I. LLAMADA A LA ACCIÓN FINAL ═══════════════ -->
+    <section class="am-cta" aria-labelledby="cta-titulo">
+      <div class="container">
+        <div class="am-cta__box">
+          <h2 class="am-cta__title" id="cta-titulo">¿Trabajamos juntos?</h2>
+          <p class="am-cta__text">
+            Si buscas incorporar un desarrollador web frontend y full stack, o tienes
+            un proyecto web en mente, escríbeme y lo vemos con calma.
+          </p>
+          <a class="btn btn-accent btn-lg" href="mailto:agus.massa96@gmail.com">
+            <svg class="am-btn__icon am-btn__icon--left" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+              <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z"/>
+            </svg>
+            Enviar un correo
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══════════════ J. FOOTER ═══════════════ -->
+  <footer class="am-footer">
+    <div class="container">
+      <div class="am-footer__top">
+        <div>
+          <p class="am-footer__brand">Agustín Massa</p>
+          <p class="am-footer__role">Programador Web · Frontend &amp; Full Stack Developer</p>
+        </div>
+
+        <nav class="am-footer__nav" aria-label="Navegación del pie de página">
+          <ul>
+            <li><a href="#perfil">Perfil</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#formacion">Formación</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <ul class="am-footer__social">
+          <li>
+            <a href="mailto:agus.massa96@gmail.com" aria-label="Enviar un correo electrónico a Agustín Massa">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/agustin-massa/" target="_blank" rel="noopener noreferrer" aria-label="Perfil de LinkedIn de Agustín Massa (se abre en una pestaña nueva)">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/AgustinCMM" target="_blank" rel="noopener noreferrer" aria-label="Perfil de GitHub de Agustín Massa (se abre en una pestaña nueva)">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="am-footer__bottom">
+        <p>© <span data-current-year>2026</span> Agustín Massa. Todos los derechos reservados.</p>
+        <a class="am-to-top" href="#inicio">
+          Volver arriba
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3.8 JS bundle (incluye Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
